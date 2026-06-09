@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "target": "ES2022",
+        "module": "ESNext",
+        "noImplicitAny": true,
+        "ignoreDeprecations": "6.0",
+        "moduleResolution": "node",
+        "lib": [
+            "ES2022"
+        ],
+        "baseUrl": ".",
+        },
+    "include": [
+        "*.js",
+        "public/assets/js/main.js",
+        "types/global.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
