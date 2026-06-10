@@ -70,14 +70,21 @@
 }
 
 body {
-    height: 100dvh;
+    min-height: 100dvh;
+    margin: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* space around para separar el header del chat */
     justify-content: space-around;
     background-color: var(--color-bg-body);
     font-family: Helvetica, sans-serif, Arial;
+}
+
+@media(min-width: 480px) {
+    
+    body {
+        margin: 0;
+    }
 }
 
 
@@ -123,6 +130,13 @@ body {
     gap: 0.5rem;
 }
 
+.tech-item--separator {
+    width: 0.15rem;
+    height: 6rem;
+    background-color: var(--color-msg-user-bg);
+   
+}
+
 .tech-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -147,29 +161,24 @@ body {
 
 @media(min-width: 480px) {
     
+    .tech-item--separator {
+        width: 0.3rem;
+        
+    }
     .tech-icon {
         width: 3rem;
         height: 3rem;
     }
-
-    .tech-icon--deepseek {
-        width: 8rem;
-        height: 3;
-    }
-
+   
     .tech-name {
         font-size: 1.4rem;
     }
 }
 
 @media(min-width: 768px) {
+    
     .tech-icon {
         width: 3rem;
-        height: 3rem;
-    }
-
-    .tech-icon--deepseek {
-        width: 10rem;
         height: 3rem;
     }
 
