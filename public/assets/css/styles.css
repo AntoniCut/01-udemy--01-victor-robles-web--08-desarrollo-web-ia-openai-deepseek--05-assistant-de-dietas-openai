@@ -80,6 +80,8 @@ body {
     font-family: Helvetica, sans-serif, Arial;
 }
 
+
+/*  -----  Layout principal  -----  */
 .layout__header-project {
     width: 95%;
     max-width: 80rem;
@@ -101,6 +103,85 @@ body {
     text-align: center;
 }
 
+/*  -----  Tech stack icons  -----  */
+
+.header__tech-stack {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tech-item {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+    transition: transform 300ms ease;
+}
+
+.tech-icon--deepseek {
+    width: 6rem;
+    height: 1.5;
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+
+.tech-name {
+    font-size: 1.2rem;
+    color: var(--color-text-header);
+    font-weight: 500;
+}
+
+@media(min-width: 480px) {
+    
+    .tech-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .tech-icon--deepseek {
+        width: 8rem;
+        height: 3;
+    }
+
+    .tech-name {
+        font-size: 1.4rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .tech-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .tech-icon--deepseek {
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .tech-name {
+        font-size: 1.6rem;
+    }
+}
+
+
+/*  -----  Estilos del Proyecto  -----  */
+
+
+/*  -----  Layout del chat  -----  */
 .layout__chat {
     width: 95%;
     max-width: 80rem;
